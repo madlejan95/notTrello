@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Rikal nekdo ze tables jsou obsolete? Ja ne!</h2>
+
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th>Hodnota</th>
+  </tr>
+  <tr>
+    <td>Prijem</td>
+    <td> {{ income }}</td>
+  </tr>
+  <tr>
+    <td>Vydaje</td>
+    <td> {{ expenses }}</td>
+  </tr>
+  <tr>
+    <td>Zdanitelny prijem</td>
+    <td> {{ taxable_income }}</td>
+  </tr>
+
+  <tr>
+    <td>Zaklad dane pro rok 2024</td>
+    <td> {{ tax_base }}</td>
+  </tr>
+
+  <tr>
+    <td>Sociální dan</td>
+    <td> {{ social_tax }}</td>
+  </tr>
+  <tr>
+    <td>Zdravotni dan</td>
+    <td>{{health_tax}}</td>
+  </tr>
+  <tr>
+    <td>Dan z prijmu</td>
+    <td>{{income_tax}}</td>
+  </tr>
+  <tr>
+    <td>Milionarska dan</td>
+    <td>{{mil_tax}}</td>
+  </tr>
+  <tr>
+    <td><b>Cisty prijem</b></td>
+    <td><b>{{net_income}}</b></td>
+  </tr>
+  <tr>
+    <td>Efektivni zdaneni v procentech</td>
+    <td>{{effective_tax}}</td>
+  </tr>
+
+</table>
+<br>
+<table style="width:100%">
+  <tr>
+    <th>Konstanty</th>
+    <th>Hodnota</th>
+  </tr>
+  <tr>
+    <td>Vydajovy pausal (procentualni konstanta)</td>
+    <td>0.6</td>
+  </tr>
+  <tr>
+    <td>Maximum vydajovy pausal</td>
+    <td>1 200 000 CZK</td>
+  </tr>
+  <tr>
+    <td>Pocet pracovnich dnu</td>
+    <td>{{ num_of_days }}</td>
+  </tr>
+  <tr>
+    <td>Sleva poplatník</td>
+    <td>30 840</td>
+  </tr>
+  <tr>
+    <td>Zaklad dane 2024 (procentualni konstanta)</td>
+    <td>0.55</td>
+  </tr>
+  <tr>
+    <td>Socialni procentualne z danoveho zakladu (procentualni konstanta)</td>
+    <td>0.292</td>
+  </tr>
+  <tr>
+    <td>Zdravotni procentualne z danoveho zakladu (procentualni konstanta)</td>
+    <td>0.135</td>
+  </tr>
+  <tr>
+    <td>Dan z prijmu (procentualni konstanta)</td>
+    <td>0.15</td>
+  </tr>
+  <tr>
+    <td>"Milionarska" dan (procentualni konstanta)</td>
+    <td>0.08</td>
+  </tr>
+  <tr>
+    <td>Hranice pro mil. Dan 2024</td>
+    <td>1 440 000</td>
+  </tr>
+  <tr>
+    <td>Maximalni zaklad dane pro vypocet socialniho pojisteni</td>
+    <td>1 920 000</td>
+  </tr>
+</table>
+
+<p>Pro zmenu jinych konstant nez pocet pracovnich dnu a md_rate kontaktujte Honzika.</p>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Add a black background color to the top navigation */
+.topBar {
+  background-color: #004065;
+  overflow: hidden;
+  color: white;
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.mainDivWrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #D62929 #D62929;
+  overflow: auto;
+  display: flex;
+  /*align-items: center;*/
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  height: 93vh;
+}
+
+.trelloButton {
+  padding: 13px 100px 13px 10px;
+  margin: 10px 5px;
+  border-radius: 12px;
+  border: 0px;
+  color: white;
+  background-color: rgba(61, 126, 162, 255);
+  cursor: pointer;
+}
+
+.trelloButton:hover {
+  background-color: #1b6694;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
