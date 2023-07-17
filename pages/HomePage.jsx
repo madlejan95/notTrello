@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import BasicTable from './BasicTable.jsx';
+import BasicTable from '../components/BasicTable.jsx';
 import Link from 'next/link';
 
 function Header({ title }) {
