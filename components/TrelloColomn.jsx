@@ -10,7 +10,7 @@ export default function TrelloColomn({ index, idcko, isNextColomn=false, initTex
   const [topic, setTopic] = useState('');
   
   function transferToColomn() {
-    //new Audio('/blbl.mp3').play();
+    new Audio('/blbl.mp3').play();
     setIsColomn(true);
   }
 

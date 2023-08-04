@@ -7,10 +7,10 @@ export default function TrelloInitColomn({initText, setIsColomn, setTopic, setFi
 
     function addColomn() {
         if (topicRef.current.value === '') {
-          //new Audio('/missingText.mp3').play();
+          new Audio('/missingText.mp3').play();
           return;
         }
-        //new Audio('/addSloupec.mp3').play();
+        new Audio('/addSloupec.mp3').play();
         setTopic(topicRef.current.value);
         setFinishedIsColomn(true);
         functionsWrapper.nextPls();
@@ -24,7 +24,7 @@ export default function TrelloInitColomn({initText, setIsColomn, setTopic, setFi
     }
 
     function removeColomn() {
-        //new Audio('/cancelSloupec.mp3').play();
+        new Audio('/cancelSloupec.mp3').play();
         setIsColomn(false);
     }
 

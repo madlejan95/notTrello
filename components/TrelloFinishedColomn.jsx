@@ -27,7 +27,7 @@ export default function TrelloFinishedColomn({functionsWrapper, isDraggedUnder, 
       };
 
     function removeCreatedColomn() {
-        //new Audio('/cancelSloupecVyrobeny.mp3').play();
+        new Audio('/cancelSloupecVyrobeny.mp3').play();
         setIsColomn(false);
         setFinishedIsColomn(false);
         setTopic('');
